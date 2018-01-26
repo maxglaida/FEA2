@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage BackgroundColor="LightSteelBlue"
+            xmlns:local="clr-namespace:EFApp.TabbedPages"
+            xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="EFApp.TabsHeader">
+    <!--Pages can be added as references or inline-->
+    <local:HomePage Title="Home" />
+
+    <local:InboxPage Title="Inbox" />
+    <local:ContactPage Title="Contacts"/>
+    <NavigationPage Title="Send File">
+        <x:Arguments>
+            <local:SendFilePage />
+        </x:Arguments>
+    </NavigationPage>
+</TabbedPage>

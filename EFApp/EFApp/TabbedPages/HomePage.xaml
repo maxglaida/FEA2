@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EFApp.TabbedPages.HomePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Crypto-News:" FontAttributes="Bold" FontSize="Large" />
+            
+            <Image Aspect="AspectFit" Source="https://i2.wp.com/cryptorials.io/wp-content/uploads/2015/11/privacy-meme.jpg?fit=625%2C572"></Image>
+            <Image Aspect="AspectFit" Source="http://s2.quickmeme.com/img/e3/e349501b2bcc5ab6a2a92354d08971fcb6ef853ad3e1e206dc4b7b925cfa732b.jpg"></Image>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

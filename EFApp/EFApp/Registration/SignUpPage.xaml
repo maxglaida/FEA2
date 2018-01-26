@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage BackgroundColor="LightSteelBlue"
+             NavigationPage.HasBackButton="False" NavigationPage.HasNavigationBar="False"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EFApp.SignUpPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" Padding="20">
+            <Entry Keyboard="Email" Unfocused="Email_Completed"  Placeholder="Email" Completed="Email_Completed"/>
+            <Entry Keyboard="Text" Unfocused="FullName_Completed" Placeholder="Full-name" Completed="FullName_Completed"/>
+            <Button x:Name="submitBtn" Text="Sign Up" Clicked="Button_Clicked" IsEnabled="False" />
+            <Label x:Name="infoText" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text=""/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

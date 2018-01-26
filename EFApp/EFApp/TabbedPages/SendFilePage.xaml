@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EFApp.TabbedPages.SendFilePage">
+
+
+    <ListView x:Name="listView" ItemSelected="listView_ItemSelected">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ImageCell Text="{Binding name}" TextColor="Black" Detail="{Binding email}" />
+
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

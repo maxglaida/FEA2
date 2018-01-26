@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EFApp.TabbedPages.ContactPage">
+    <StackLayout>
+        <ListView x:Name="contactsListView">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding name}" Detail="{Binding email}">
+                    <TextCell.ContextActions>
+                        <MenuItem 
+							Text="Delete" 
+							IsDestructive="false" 
+							Clicked="OnDeleteContact"
+							CommandParameter="{Binding .}" />
+                    </TextCell.ContextActions>
+                </TextCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    <Button Text="Add a new contact" VerticalOptions="End" Clicked="OnAddContact"></Button>
+    </StackLayout>
+</ContentPage>

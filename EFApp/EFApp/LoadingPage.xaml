@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage BackgroundColor="LightSteelBlue"
+             NavigationPage.HasNavigationBar="False" 
+             NavigationPage.HasBackButton="False"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EFApp.LoadingPage">
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+        <Image x:Name="logopic" Source="http://vignette2.wikia.nocookie.net/clubpenguin/images/0/0e/Secret_Agent_PSA_Postcard.png/revision/latest?cb=20130116025904"
+                HeightRequest="160" WidthRequest="160"/>
+        <Button Text="Next" Clicked="Button_Clicked"/>
+    </StackLayout>
+
+</ContentPage>

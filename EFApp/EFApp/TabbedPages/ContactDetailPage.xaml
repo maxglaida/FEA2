@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage BackgroundColor="LightSteelBlue"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EFApp.TabbedPages.ContactDetailPage">
+    <StackLayout>
+        <SearchBar x:Name="SearchBar" Placeholder="Enter email" SearchButtonPressed="SearchBar_SearchButtonPressed" />
+        <Label Text="{Binding name}" />
+        <Label Text="{Binding email}" />
+        <Button x:Name="btn" Text="Add user" Clicked="OnSave" VerticalOptions="End" IsEnabled="False" />
+    </StackLayout>
+</ContentPage>
